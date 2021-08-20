@@ -1,0 +1,160 @@
+/*Reset styles*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/*--------------------*/
+body {
+  min-width: 320px;
+  overflow-x: hidden;
+}
+
+.container {
+  padding: 0 20px;
+}
+
+/*Styles for header*/
+.header {
+  background: #2B4074;
+}
+
+.header__inner {
+  min-height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo__link {
+  margin-left: 8px;
+}
+
+.menu__btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 3px;
+  background: #FFFFFF;
+  position: relative;
+}
+
+.menu__btn::after {
+  content: ' ';
+  width: 12px;
+  height: 2px;
+  border-radius: 1px;
+  background: #2B4074;
+  position: absolute;
+  top: 15px;
+  left: 14px;
+  box-shadow: 0 4px 0 0 #2B4074, 0 8px 0 0 #2B4074;
+}
+
+/*Media*/
+@media (min-width: 640px) {
+  .container {
+    padding: 0 30px;
+  }
+  /*Styles for header*/
+  .header__inner {
+    min-height: 100px;
+  }
+  .logo__link {
+    margin-left: 14px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding: 0 40px;
+  }
+  /*Styles for header*/
+  .logo__link {
+    margin-left: 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1320px;
+  }
+  /*Styles for header*/
+  .menu__btn {
+    margin-right: 90px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

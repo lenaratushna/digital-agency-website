@@ -1,0 +1,15 @@
+@media (min-width: 640px){
+    .container{
+        padding: 0 30px;
+    }
+
+    /*Styles for header*/
+    .header{
+        &__inner{
+            min-height: 100px;
+        }
+    }
+    .logo__link{
+        margin-left: 14px;
+    }
+}
