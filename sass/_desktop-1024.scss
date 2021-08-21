@@ -23,4 +23,14 @@
             bottom: 80px;
         }
     }
+
+    /*Styles for Promo*/
+    .promo {
+        &__box{
+            max-width: 695px;
+        }
+        &__text {
+            max-width: 555px;
+        }
+    }
 }

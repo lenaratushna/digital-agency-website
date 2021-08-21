@@ -34,4 +34,22 @@
             line-height: 20px;
         } 
     }
+
+    /*Styles for Promo*/
+    .promo {
+        text-align: start;
+        &__inner{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        &__box{
+            max-width: 427px;
+        }
+        &__text {
+            max-width: 335px;
+            margin-bottom: 0;
+        }
+
+    }
 }

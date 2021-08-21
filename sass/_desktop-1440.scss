@@ -36,5 +36,25 @@
                 background: #FFFFFF;
             }
         }
+        .slick-arrow{
+            width: 70px;
+            height: 70px;
+        }
+        .slick-prev{
+            top: calc(50% - 70px);
+        }
+        .slick-next{
+            bottom: calc(50% - 70px);
+        }
+    }
+
+    /*Styles for Promo*/
+    .promo {
+        &__inner{
+            padding: 0 80px;
+        }
+        &__box{
+            max-width: 796px;
+        }
     }
 }
