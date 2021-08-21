@@ -5,5 +5,22 @@
         padding: 0 40px;
     }
 
-    
+    /*Styles for Intro*/
+    .intro{
+        min-height: 618px;
+    }
+    .slider{
+        &__item{
+            min-height: 618px;
+        }
+        &__title{      
+            padding: 110px 0 0;
+            font-size: 84px;
+            line-height: 84px;
+            letter-spacing: 2px;
+        }
+        .slick-dots{
+            bottom: 80px;
+        }
+    }
 }

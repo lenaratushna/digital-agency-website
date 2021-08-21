@@ -12,4 +12,57 @@
     .logo__link{
         margin-left: 14px;
     }
+
+    /*Styles for Intro*/
+    .intro{
+        min-height: 386px;
+    }
+    .slider{
+        &__item{
+            min-height: 386px;
+        }
+        &__title{      
+            font-size: 60px;
+            line-height: 60px;
+            padding: 50px 0 15px;
+            position: relative;
+            margin: 0 auto 30px;
+        }
+        &__btn{
+            display: block;
+            margin: 0 auto 113px;
+            font-size: 18px;
+            background: $accent_color;
+            color: $bg-color;
+            padding: 16px 45px;
+            border-radius: 3px;
+        }
+        .slick-dots{
+            bottom: 50px;
+        }
+        .slick-arrow{
+            width: 56px;
+            height: 56px;
+            position: absolute;
+            right: 0;
+            z-index: 5;
+        }
+        .slick-prev{
+            background: $accent_color;
+            top: calc(50% - 56px);
+            img{
+                margin-left: 5px;
+            }
+        }
+        .slick-next{
+            background: $bg-color;
+            bottom: calc(50% - 56px);
+            img{
+                margin-right: 5px;
+            }
+        }
+    }
+    
+    /*Styles for */
+
 }

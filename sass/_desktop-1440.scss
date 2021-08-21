@@ -7,4 +7,34 @@
     .menu__btn{
         margin-right: 90px;
     }
+
+    /*Styles for Intro*/
+    .intro{
+        min-height: 668px;
+    }
+    .slider{
+        &__item{
+            min-height: 668px;
+        }
+        &__title{      
+            font-size: 96px;
+            line-height: 96px;
+        }
+        &__text{
+            max-width: 886px;
+            font-size: 24px;
+            line-height: 26px;
+        }
+        .slick-dots{
+            .slick-active{
+                button{
+                    background: transparent;
+                    border: 1px solid #FFFFFF;
+                }
+            }
+            button{
+                background: #FFFFFF;
+            }
+        }
+    }
 }
