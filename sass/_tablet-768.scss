@@ -52,4 +52,29 @@
         }
 
     }
+
+    /*Styles for Services*/
+    .services {
+        padding: 50px 0 0;
+        &__title {
+            margin-bottom: 30px;
+        }
+        &__desc {
+            text-align: start;
+            &::after{
+                margin-left: 0;
+            }
+        }
+        &__text {
+            text-align: start;
+        }
+        &__item {
+            min-height: 334px;
+            &:hover{
+                .services__item-inner{
+                    padding: 43px 20px 35px;
+                }
+            }
+        }
+    }
 }

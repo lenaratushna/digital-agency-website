@@ -33,4 +33,35 @@
             max-width: 555px;
         }
     }
+
+    
+    /*Styles for Services*/
+    .services {
+        padding: 52px 0 0;
+        &__title {
+            margin-bottom: 60px;
+        }
+        &__desc {
+           padding-bottom: 46px;
+           margin-bottom: 40px;
+        }
+        &__text {
+           margin-bottom: 32px;
+           max-width: 608px;
+        }
+        &__item {
+            width: 25%;
+            min-height: 277px;
+            &:nth-child(2), &:nth-child(6){
+                border-right: none;
+            }
+            &:hover{
+                .services__item-inner{
+                    margin: 10px 15px;
+                    padding: 21px 9px 28px;
+                    min-height: 255px;
+                }
+            }
+        }
+    }
 }

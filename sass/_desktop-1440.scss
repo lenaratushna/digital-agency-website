@@ -57,4 +57,43 @@
             max-width: 796px;
         }
     }
+
+    /*Styles for Services*/
+    .services {
+        padding: 0;
+        .container{
+            padding: 0;
+        }
+        &__inner{
+            display: flex;
+            justify-content: space-between;
+        }
+        &__head{
+            min-width: 376px;
+            margin-right: 100px;
+        }
+        &__title {
+            text-align: start;
+            margin: 90px 0 70px;
+        }
+        &__desc{
+            padding-bottom: 38px;
+            margin-bottom: 35px;
+        }
+        &__text{
+            margin: 0;
+        }
+        &__items{
+            margin-right: -60px;
+        }
+        &__item{
+            min-width: 226px;
+            height: 270px;
+            &:hover{
+                .services__item-inner{
+                    margin: 3px 0;
+                }
+            }
+        }
+    }
 }
