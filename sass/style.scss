@@ -3,7 +3,6 @@
 /*Variables*/
 $accent_color: #2B4074;
 $text-color: #4A4A4A;
-$bg-color: #F9F6E5;
 
 /*Reset styles*/
 *{
@@ -204,7 +203,7 @@ body{
         margin-bottom: 40px
     }
     &__btn {
-        background: $bg-color;
+        background: #FFFFFF;
         padding: 16px;
         font-weight: 500;
         font-size: 18px;
@@ -238,13 +237,13 @@ body{
     }
     &__item {
         min-height: 310px;
-        border: 1px solid $bg-color;
+        border: 1px solid #F9F6E5;
         border-bottom: none;
         display: flex;
         flex-direction: column;
         justify-content: center;
         &:last-child{
-            border-bottom: 1px solid $bg-color;
+            border-bottom: 1px solid #F9F6E5;
         }
         &:hover{
             .services__item-inner{
@@ -293,6 +292,83 @@ body{
         color: $accent_color;
     }
 }
+
+/*Styles for Projects*/
+.projects {
+    text-align: center;
+    padding: 20px 0;
+    background: linear-gradient(180deg, $accent_color 0%, rgba(43, 64, 116, 0) 100%);
+    &__title {
+        color: #FFFFFF;
+        margin-bottom: 40px;
+        &::after{
+            background: #FFFFFF;
+        }
+    }
+    &__item-img {
+        min-height: 250px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 4px;
+        padding: 12px 14px;
+        &:hover{
+            .projects__item-inner{
+            opacity: 1;
+            }
+        }
+    }
+    &__item-inner {
+        opacity: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(255,255,255, 0.83);
+        border-radius: 4px;
+        min-height: 227px;
+        transition: all .5s;
+    }
+    &__item-info, &__item-search {
+        margin: 0 7px;
+    }
+    &__item-link {
+        display: block;
+        padding: 20px 0;
+        font-family: 'Roboto Condensed';
+        font-weight: 700;
+        line-height: 19px;
+        letter-spacing: 2px;
+        color: $accent_color;
+    }
+}
+
+/*Styles for Team*/
+.team {
+    padding: 20px 0 40px;
+    text-align: center;
+    &__img {
+        width: 100%;
+        margin-bottom: 40px;
+        border-radius: 4px;
+    }
+    &__title {
+        color: $text-color;
+        margin-bottom: 23px;
+    }
+    &__text {
+        color: #9B9B9B;
+        margin-bottom: 84px;
+    }
+    &__btn {
+        color: #FFFFFF;
+        background: $accent_color;
+        font-weight: 500;
+        font-size: 20px;
+        padding: 21px 26px;
+        border-radius: 3px;
+    }
+}
+
 
 /*Media*/
 @import "tablet-640";

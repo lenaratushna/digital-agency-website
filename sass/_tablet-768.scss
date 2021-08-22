@@ -77,4 +77,60 @@
             }
         }
     }
+
+     /*Styles for Projects*/
+     .projects {
+        padding: 80px 0 60px;
+        &__items{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        &__item{
+            margin: 0 13px;
+        }
+        &__item-img {
+            min-height: 282px;
+            width: 317px;
+            padding: 12px 14px;
+		}
+		&__item-inner {
+            min-height: 256px;
+		}
+		&__item-link {
+            padding: 30px 0;
+		}
+    }
+
+    /*Styles for Team*/
+    .team {
+        padding: 40px 0 48px;
+        text-align: left;
+		&__inner {
+            display: flex;
+		}
+		&__img {
+            margin-bottom: 0;
+            min-width: 240px;
+            height: 100%;
+            margin-right: 34px;
+		}
+		&__title {
+            font-size: 36px;
+            line-height: 38px;
+            margin-bottom: 12px;
+            &::after{
+                margin-left: 0;
+            }
+		}
+		&__text {
+            font-size: 18px;
+            margin-bottom: 30px;
+		}
+
+		&__btn {
+            font-size: 18px;
+		}
+    }
+
 }

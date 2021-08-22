@@ -252,7 +252,7 @@ body {
     letter-spacing: 0.8px;
     margin-bottom: 40px; }
   .promo__btn {
-    background: #F9F6E5;
+    background: #FFFFFF;
     padding: 16px;
     font-weight: 500;
     font-size: 18px;
@@ -331,10 +331,85 @@ body {
     letter-spacing: 2px;
     color: #2B4074; }
 
+/*Styles for Projects*/
+.projects {
+  text-align: center;
+  padding: 20px 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(#2B4074), to(rgba(43, 64, 116, 0)));
+  background: linear-gradient(180deg, #2B4074 0%, rgba(43, 64, 116, 0) 100%); }
+  .projects__title {
+    color: #FFFFFF;
+    margin-bottom: 40px; }
+    .projects__title::after {
+      background: #FFFFFF; }
+  .projects__item-img {
+    min-height: 250px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 4px;
+    padding: 12px 14px; }
+    .projects__item-img:hover .projects__item-inner {
+      opacity: 1; }
+  .projects__item-inner {
+    opacity: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: rgba(255, 255, 255, 0.83);
+    border-radius: 4px;
+    min-height: 227px;
+    -webkit-transition: all .5s;
+    transition: all .5s; }
+  .projects__item-info, .projects__item-search {
+    margin: 0 7px; }
+  .projects__item-link {
+    display: block;
+    padding: 20px 0;
+    font-family: 'Roboto Condensed';
+    font-weight: 700;
+    line-height: 19px;
+    letter-spacing: 2px;
+    color: #2B4074; }
+
+/*Styles for Team*/
+.team {
+  padding: 20px 0 40px;
+  text-align: center; }
+  .team__img {
+    width: 100%;
+    margin-bottom: 40px;
+    border-radius: 4px; }
+  .team__title {
+    color: #4A4A4A;
+    margin-bottom: 23px; }
+  .team__text {
+    color: #9B9B9B;
+    margin-bottom: 84px; }
+  .team__btn {
+    color: #FFFFFF;
+    background: #2B4074;
+    font-weight: 500;
+    font-size: 20px;
+    padding: 21px 26px;
+    border-radius: 3px; }
+
 /*Media*/
 @media (min-width: 640px) {
   .container {
     padding: 0 30px; }
+
+  .title {
+    font-size: 48px;
+    line-height: 56px; }
+    .title::after {
+      width: 100px; }
 
   /*Styles for header*/
   .header__inner {
@@ -360,7 +435,7 @@ body {
     margin: 0 auto 113px;
     font-size: 18px;
     background: #2B4074;
-    color: #F9F6E5;
+    color: #FFFFFF;
     padding: 16px 45px;
     border-radius: 3px; }
   .slider .slick-dots {
@@ -377,7 +452,7 @@ body {
     .slider .slick-prev img {
       margin-left: 5px; }
   .slider .slick-next {
-    background: #F9F6E5;
+    background: #FFFFFF;
     bottom: calc(50% - 56px); }
     .slider .slick-next img {
       margin-right: 5px; }
@@ -386,8 +461,6 @@ body {
   .services {
     padding: 25px 0 0; }
     .services__title {
-      font-size: 48px;
-      line-height: 56px;
       margin-bottom: 20px;
       padding-bottom: 0; }
       .services__title::after {
@@ -421,7 +494,27 @@ body {
       .services__item:nth-child(even) {
         border-left: none; }
       .services__item:last-child {
-        border-bottom: none; } }
+        border-bottom: none; }
+
+  /*Styles for Projects*/
+  .projects {
+    padding: 40px 0 20px; }
+    .projects__item-img {
+      min-height: 460px;
+      padding: 21px 24px; }
+    .projects__item-inner {
+      min-height: 417px; }
+    .projects__item-link {
+      font-size: 20px;
+      line-height: 23px; }
+
+  /*Styles for Team*/
+  .team {
+    padding: 46px 0 53px; }
+    .team__title {
+      margin-bottom: 40px; }
+    .team__text {
+      margin-bottom: 56px; } }
 @media (min-width: 768px) {
   .container {
     padding: 0 40px; }
@@ -484,7 +577,55 @@ body {
     .services__item {
       min-height: 334px; }
       .services__item:hover .services__item-inner {
-        padding: 43px 20px 35px; } }
+        padding: 43px 20px 35px; }
+
+  /*Styles for Projects*/
+  .projects {
+    padding: 80px 0 60px; }
+    .projects__items {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+    .projects__item {
+      margin: 0 13px; }
+    .projects__item-img {
+      min-height: 282px;
+      width: 317px;
+      padding: 12px 14px; }
+    .projects__item-inner {
+      min-height: 256px; }
+    .projects__item-link {
+      padding: 30px 0; }
+
+  /*Styles for Team*/
+  .team {
+    padding: 40px 0 48px;
+    text-align: left; }
+    .team__inner {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+    .team__img {
+      margin-bottom: 0;
+      min-width: 240px;
+      height: 100%;
+      margin-right: 34px; }
+    .team__title {
+      font-size: 36px;
+      line-height: 38px;
+      margin-bottom: 12px; }
+      .team__title::after {
+        margin-left: 0; }
+    .team__text {
+      font-size: 18px;
+      margin-bottom: 30px; }
+    .team__btn {
+      font-size: 18px; } }
 @media (min-width: 1024px) {
   .container {
     max-width: 1200px;
@@ -530,7 +671,23 @@ body {
       .services__item:hover .services__item-inner {
         margin: 10px 15px;
         padding: 21px 9px 28px;
-        min-height: 255px; } }
+        min-height: 255px; }
+
+  /*Styles for Projects*/
+  .projects {
+    padding: 80px 0 60px; }
+
+  /*Styles for Team*/
+  .team {
+    padding: 80px 0; }
+    .team__img {
+      min-width: 395px;
+      margin-right: 60px; }
+    .team__title {
+      margin-bottom: 19px; }
+    .team__text {
+      line-height: 24px;
+      margin-bottom: 20px; } }
 @media (min-width: 1440px) {
   .container {
     max-width: 1320px; }
@@ -600,6 +757,32 @@ body {
       min-width: 226px;
       height: 270px; }
       .services__item:hover .services__item-inner {
-        margin: 3px 0; } }
+        margin: 3px 0; }
+
+  /*Styles for Projects*/
+  .projects__items {
+    -ms-flex-pack: distribute;
+        justify-content: space-around; }
+  .projects__item {
+    margin: 0; }
+  .projects__item-img {
+    min-height: 239px;
+    width: 269px;
+    padding: 11px 12px; }
+  .projects__item-inner {
+    min-height: 217px; }
+  .projects__item-link {
+    padding: 30px 0; }
+
+  /*Styles for Team*/
+  .team {
+    padding: 50px 0 110px; }
+    .team__img {
+      min-width: 470px;
+      margin-right: 93px; }
+    .team__title {
+      margin-bottom: 40px; }
+    .team__text {
+      margin-bottom: 20px; } }
 
 /*# sourceMappingURL=style.css.map */
